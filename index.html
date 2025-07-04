@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartfelt Wellness: Your Guide to a Healthy Heart</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Light gray background */
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 100%); /* Pink-purple gradient */
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 4px;
+            background-color: #ec4899; /* Rose 500 */
+            border-radius: 9999px;
+        }
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem; /* rounded-xl */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-pink-600">Heartfelt Wellness</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#understanding" class="text-gray-600 hover:text-pink-600 transition duration-300">Understanding</a></li>
+                    <li><a href="#prevention" class="text-gray-600 hover:text-pink-600 transition duration-300">Prevention</a></li>
+                    <li><a href="#exercise" class="text-gray-600 hover:text-pink-600 transition duration-300">Exercise</a></li>
+                    <li><a href="#nutrition" class="text-gray-600 hover:text-pink-600 transition duration-300">Nutrition</a></li>
+                    <li><a href="#women-health" class="text-gray-600 hover:text-pink-600 transition duration-300">Women's Health</a></li>
+                    <li><a href="#blogs" class="text-gray-600 hover:text-pink-600 transition duration-300">Our Blogs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 md:py-32 text-center rounded-b-3xl shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Nurture Your Heart, Embrace Life
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                In a world where heart health is more crucial than ever, discover empowering insights, practical tips, and a supportive community to protect your most vital organ.
+            </p>
+            <a href="#prevention" class="inline-block bg-white text-pink-600 hover:bg-pink-100 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                Start Your Journey to a Healthier Heart
+            </a>
+        </div>
+    </section>
+
+    <!-- Understanding Heart Attacks Section -->
+    <section id="understanding" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto">Understanding Heart Attacks</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/fbcfe8/ec4899?text=Healthy+Heart+Diagram" alt="Diagram of a healthy heart" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed mb-6">
+                        A heart attack, or myocardial infarction, occurs when blood flow to a part of the heart is blocked, usually by a blood clot. This interruption can damage or destroy part of the heart muscle. The recent increase in cases is a concerning trend, often linked to modern lifestyles, increased stress, and changing dietary habits.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Understanding the underlying causes and recognizing the risk factors are the first steps towards prevention. While some factors like genetics are beyond our control, many others are influenced by our daily choices.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: Stress -->
+                <div class="bg-pink-50 p-6 rounded-xl shadow-md card">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">The Role of Stress</h3>
+                    <p class="text-gray-700">Chronic stress can significantly impact heart health, leading to high blood pressure and unhealthy coping mechanisms like overeating or smoking.</p>
+                </div>
+                <!-- Card 2: Sedentary Lifestyle -->
+                <div class="bg-pink-50 p-6 rounded-xl shadow-md card">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">Sedentary Lifestyles</h3>
+                    <p class="text-gray-700">Lack of physical activity contributes to obesity, high cholesterol, and diabetes, all major risk factors for heart disease.</p>
+                </div>
+                <!-- Card 3: Unhealthy Diet -->
+                <div class="bg-pink-50 p-6 rounded-xl shadow-md card">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">Unhealthy Dietary Habits</h3>
+                    <p class="text-gray-700">Diets high in saturated fats, trans fats, sodium, and sugar can lead to plaque buildup in arteries, increasing heart attack risk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precautions & Prevention Section -->
+    <section id="prevention" class="py-16 md:py-24 bg-pink-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto">Your Path to Prevention</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="md:order-2">
+                    <img src="https://placehold.co/600x400/fbcfe8/ec4899?text=Prevention+Lifestyle" alt="Woman practicing yoga for stress relief" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:order-1">
+                    <h3 class="text-2xl font-semibold text-pink-700 mb-4">Embrace a Heart-Healthy Lifestyle</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-3 text-gray-700">
+                        <li><strong>Stress Management:</strong> Practice mindfulness, meditation, yoga, or deep breathing exercises. Prioritize self-care and hobbies that bring joy.</li>
+                        <li><strong>Quality Sleep:</strong> Aim for 7-9 hours of quality sleep per night. Poor sleep can contribute to high blood pressure and other heart issues.</li>
+                        <li><strong>Avoid Smoking & Excessive Alcohol:</strong> These habits severely damage blood vessels and increase heart disease risk.</li>
+                        <li><strong>Regular Check-ups:</strong> Monitor blood pressure, cholesterol, and blood sugar levels. Early detection is key.</li>
+                        <li><strong>Maintain a Healthy Weight:</strong> Excess weight puts extra strain on your heart.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise Section -->
+    <section id="exercise" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto">Move Your Way to a Stronger Heart</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-gray-700">
+                Regular physical activity is one of the most effective ways to strengthen your heart, manage weight, and reduce stress. Here are some exercises you can incorporate into your routine.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Exercise Card 1: Brisk Walking -->
+                <div class="bg-pink-50 p-6 rounded-xl shadow-md card">
+                    <img src="https://placehold.co/400x225/fbcfe8/ec4899?text=Brisk+Walking" alt="Woman brisk walking outdoors" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">Brisk Walking: Your Daily Dose of Cardio</h3>
+                    <p class="text-gray-700 mb-4">A simple yet powerful exercise, brisk walking helps improve circulation and strengthens your heart muscle.</p>
+                    <div class="video-container mb-4">
+                        <!-- YouTube video for brisk walking -->
+                        <iframe src="https://www.youtube.com/embed/enYITYwvPAQ" title="YouTube video player for Brisk Walking" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Exercise Card 2: Yoga for Heart Health -->
+                <div class="bg-pink-50 p-6 rounded-xl shadow-md card">
+                    <img src="https://placehold.co/400x225/fbcfe8/ec4899?text=Yoga+for+Heart" alt="Woman doing yoga" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">Yoga & Pilates: Flexibility and Calm</h3>
+                    <p class="text-gray-700 mb-4">These practices reduce stress, improve flexibility, and can contribute to better cardiovascular health.</p>
+                    <div class="video-container mb-4">
+                        <!-- YouTube video for yoga -->
+                        <iframe src="https://www.youtube.com/embed/yqeirBfn2j4" title="YouTube video player for Yoga" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Exercise Card 3: Low-Impact Aerobics -->
+                <div class="bg-pink-50 p-6 rounded-xl shadow-md card">
+                    <img src="https://placehold.co/400x225/fbcfe8/ec4899?text=Low+Impact+Aerobics" alt="Woman doing low impact aerobics" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">Low-Impact Aerobics: Gentle Yet Effective</h3>
+                    <p class="text-gray-700 mb-4">Activities like swimming, cycling, or dancing are excellent for cardiovascular fitness without high joint impact.</p>
+                    <div class="video-container mb-4">
+                        <!-- YouTube video for low-impact aerobics -->
+                        <iframe src="https://www.youtube.com/embed/v8CDptlpeys" title="YouTube video player for Aerobics" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-gray-600 mt-12 text-sm">
+                Always consult with your doctor before starting any new exercise program.
+            </p>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="py-16 md:py-24 bg-pink-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto">Nourish Your Heart: Food Habits for Wellness</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/fbcfe8/ec4899?text=Healthy+Food+Plate" alt="Plate with healthy food" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed mb-6">
+                        What you eat plays a monumental role in your heart health. A balanced, nutrient-rich diet can significantly reduce your risk of heart disease. Focus on whole, unprocessed foods and limit unhealthy fats, sugars, and sodium.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-pink-700 mb-4">Key Dietary Principles:</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-3 text-gray-700">
+                        <li><strong>Fruits & Vegetables:</strong> Rich in vitamins, minerals, and antioxidants. Aim for a colorful variety daily.</li>
+                        <li><strong>Whole Grains:</strong> Choose brown rice, oats, whole wheat bread over refined grains. They are high in fiber.</li>
+                        <li><strong>Lean Proteins:</strong> Opt for fish (especially fatty fish like salmon), poultry without skin, beans, lentils, and nuts.</li>
+                        <li><strong>Healthy Fats:</strong> Include avocados, nuts, seeds, and olive oil in moderation. Avoid trans fats and limit saturated fats.</li>
+                        <li><strong>Limit Sodium:</strong> Reduce processed foods and season with herbs and spices instead of salt.</li>
+                        <li><strong>Hydration:</strong> Drink plenty of water throughout the day.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women's Heart Health Section -->
+    <section id="women-health" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto">Heart Health for Women: Know the Signs</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/fbcfe8/ec4899?text=Woman+Heart+Health" alt="Woman holding her chest, illustrating heart pain" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Heart disease is the leading cause of death for women, yet symptoms can often be subtle and differ from those in men. It's crucial for women to be aware of these differences and advocate for their heart health.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-pink-700 mb-4">Common Heart Attack Symptoms in Women:</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-3 text-gray-700">
+                        <li>Unusual fatigue (often for days)</li>
+                        <li>Sleep disturbances</li>
+                        <li>Shortness of breath</li>
+                        <li>Indigestion or nausea</li>
+                        <li>Pain in the arm, back, neck, or jaw (can be subtle)</li>
+                        <li>Lightheadedness or dizziness</li>
+                        <li>Sweating</li>
+                        <li>Chest pain, while common, may not be the most prominent symptom and can feel more like pressure or tightness.</li>
+                    </ul>
+                    <p class="text-lg leading-relaxed mt-6 text-pink-700 font-semibold">
+                        If you experience any of these symptoms, especially if they are new or unusual for you, seek immediate medical attention.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="py-16 md:py-24 bg-pink-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto">Our Latest Heart Health Blogs</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-gray-700">
+                Dive deeper into heart health topics with our informative articles and expert insights.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <img src="https://placehold.co/400x225/fbcfe8/ec4899?text=Blog+Post+1" alt="Image for blog post 1" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">5 Superfoods for a Stronger Heart</h3>
+                    <p class="text-gray-700 mb-4">Discover the top foods that can significantly boost your cardiovascular health and reduce risk.</p>
+                    <a href="https://healthisourheart.blogspot.com/2025/07/5-superfoods-for-stronger-heart.html" class="text-pink-600 hover:text-pink-800 font-semibold text-sm" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                </div>
+                <!-- Blog Post Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <img src="https://placehold.co/400x225/fbcfe8/ec4899?text=Blog+Post+2" alt="Image for blog post 2" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">Mindfulness & Heart Health: A Powerful Connection</h3>
+                    <p class="text-gray-700 mb-4">Explore how stress reduction techniques can have a profound impact on your heart's well-being.</p>
+                    <a href="https://healthisourheart.blogspot.com/2025/07/mindfulness-heart-health-powerful.html" class="text-pink-600 hover:text-pink-800 font-semibold text-sm" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                </div>
+                <!-- Blog Post Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <img src="https://placehold.co/400x225/fbcfe8/ec4899?text=Blog+Post+3" alt="Image for blog post 3" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">Understanding Cholesterol: Good vs. Bad</h3>
+                    <p class="text-gray-700 mb-4">Demystify cholesterol and learn how to maintain healthy levels for a healthier heart.</p>
+                    <a href="https://healthisourheart.blogspot.com/2025/07/understanding-cholesterol-good-vs-bad.html" class="text-pink-600 hover:text-pink-800 font-semibold text-sm" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-pink-600 text-white hover:bg-pink-700 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                    View All Blogs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Footer -->
+    <footer class="gradient-bg text-white py-12 rounded-t-3xl shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Take Charge of Your Heart Health Today!</h3>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                Your heart is precious. By making informed choices and adopting a proactive approach, you can significantly improve your cardiovascular well-being.
+            </p>
+            <a href="#" class="inline-block bg-white text-pink-600 hover:bg-pink-100 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                Explore More Resources
+            </a>
+            <p class="mt-12 text-sm opacity-75">&copy; 2025 Heartfelt Wellness. All rights reserved. Disclaimer: This information is for educational purposes only and not a substitute for professional medical advice.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
